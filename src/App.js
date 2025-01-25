@@ -8,7 +8,7 @@ import Login from './components/Auth/Login';
 import SignUp from './components/Auth/SignUp';
 import NavBar from './components/Layout/NavBar';
 import { useSelector, useDispatch } from 'react-redux';
-import { initializeUserTasks, clearTasks } from './store/taskSlice';
+import { initializeUserTasks } from './store/taskSlice';
 
 const PrivateRoute = ({ children }) => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);

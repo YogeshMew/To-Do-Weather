@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate, Navigate, Link as RouterLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { loginAsync } from '../../store/authSlice';
 import { initializeUserTasks } from '../../store/taskSlice';
 import {
@@ -28,7 +28,7 @@ const Login = () => {
   
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { isAuthenticated, loading, error } = useSelector((state) => state.auth);
+  const { isAuthenticated, loading } = useSelector((state) => state.auth);
 
   if (isAuthenticated) {
     return <Navigate to="/" />;
@@ -51,6 +51,7 @@ const Login = () => {
       if (loginAsync.fulfilled.match(resultAction)) {
         // Initialize tasks for the user after successful login
         dispatch(initializeUserTasks(formData.email));
+        navigate('/');
       }
     } catch (err) {
       setErrors({

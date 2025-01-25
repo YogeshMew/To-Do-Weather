@@ -6,8 +6,7 @@ import {
   Button,
   Box,
   useTheme,
-  useMediaQuery,
-  IconButton
+  useMediaQuery
 } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
