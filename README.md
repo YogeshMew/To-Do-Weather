@@ -2,11 +2,11 @@
 
 A modern, responsive Todo application built with React that includes weather information for outdoor tasks. This project demonstrates the implementation of a full-featured task management system with user authentication, real-time weather updates, and a responsive design.
 
-![Todo App Screenshot](screenshots/todo-app.png)
+![Todo App Screenshot](./screenshots/todo-app.png)
 
 ## Live Demo
 
-[View Live Demo](https://your-deployment-url.netlify.app)
+[View Live Demo](https://to-do-weather.netlify.app/)
 
 ## Features
 
@@ -120,13 +120,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Screenshots
 
 ### Desktop View
-![Desktop View](screenshots/desktop.png)
+![Desktop View](./screenshots/desktop.png)
+
 
 ### Mobile View
 ![Mobile View](screenshots/mobile.png)
 
 ### Task Management
-![Task Management](screenshots/tasks.png)
+![Task Management](./screenshots/tasks.png)
 
 ## Future Improvements
 
