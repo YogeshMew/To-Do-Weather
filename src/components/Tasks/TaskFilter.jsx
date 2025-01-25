@@ -1,12 +1,11 @@
 import React from 'react';
-import { Box, Tabs, Tab, useTheme } from '@mui/material';
+import { Box, Tabs, Tab } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from '../../store/taskSlice';
 
 const TaskFilter = () => {
   const dispatch = useDispatch();
   const currentFilter = useSelector((state) => state.tasks.filter);
-  const theme = useTheme();
 
   const handleFilterChange = (event, newFilter) => {
     if (newFilter !== null) {
